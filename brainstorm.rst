@@ -1,6 +1,8 @@
 Topics to cover:
 
 - What is Selenium?
+  - A tool for driving a browser as if a user were using it
+  - Can drive Firefox, Chrome, Safari, IE
 - Why use page maps?
 - Why use page objects?
 - Which selector type to favor? (CSS)
@@ -16,3 +18,14 @@ Topics to cover:
 │                         | Selenium is, get yourself involved with the
 │                         | community, hop int he chatroom, submit
 │                         | patches, fix bugs, file bugs ,etc"
+
+Demonstrations:
+- Start a browser
+- Open a web page
+- Find an element on the page using each of the different types of selectors
+- Use an implicit wait
+- Use an explicit wait
+- Use a page map
+- Use a page object
+- CSS refresher
+- XPATH quick overview
