@@ -69,20 +69,130 @@ Python 3.2.3 (default, Jun  8 2012, 05:36:09)
 Type "help", "copyright", "credits" or "license" for more information.
 &gt;&gt;&gt; from selenium import webdriver
 &gt;&gt;&gt; driver = webdriver.Firefox()
-&gt;&gt;&gt; driver.get('http://www.google.com/')
+&gt;&gt;&gt; driver.get(&apos;http://www.google.com/&apos;)
 &gt;&gt;&gt;
+</pre>
+<p>These three lines of code load the Selenium WebDriver interface, start Firefox, and ask Firefox to load google.com.</p>
+</section>
 
+<section class="slide">
+<h2>A Simple Example (2)</h2>
+<pre>
+&gt;&gt;&gt; from selenium import webdriver
+&gt;&gt;&gt; keys = webdriver.common.keys.Keys()
+&gt;&gt;&gt; driver = webdriver.Firefox()
+&gt;&gt;&gt; driver.get(&apos;http://www.google.com/&apos;)
+&gt;&gt;&gt; search_field = driver.find_element_by_name(&apos;q&apos;)
+&gt;&gt;&gt; search_field.send_keys(&apos;koala&apos;)
+&gt;&gt;&gt; search_field.send_keys(keys.ENTER)
+&gt;&gt;&gt; driver.find_element_by_link_text(&apos;Images&apos;).click()
 </pre>
 </section>
 
 <section class="slide">
-    <h2>Who am I?</h2>
+<h2>Supported languages/platforms include:</h2>
+<ul>
+    <li>C++</li>
+    <li>Dotnet</li>
+    <li>Java</li>
+    <li>Javascript</li>
+    <li>Python</li>
+    <li>Ruby</li>
+</ul>
+<h2>Supported browsers include:</h2>
+<ul>
+    <li>Chrome</li>
+    <li>Firefox</li>
+    <li>Internet Explorer</li>
+    <li>Opera</li>
+    <li>PhantomJS</li>
+</ul>
+</section>
+
+<section class="slide">
+<h2>Ways to find elements</h2>
+<ul>
+    <li>Class name</li>
+    <li>CSS selector</li>
+    <li>ID attribute</li>
+    <li>Link text</li>
+    <li>Name attribute</li>
+    <li>Partial link text</li>
+    <li>Tag name</li>
+    <li>XPath expression</li>
+</ul>
+</section>
+
+<section class="slide">
+<h2>Interactions on elements</h2>
+<ul>
+    <li>Check whether it is displayed, enabled, or selected</li>
+    <li>Clear</li>
+    <li>Click</li>
+    <li>Find the parent element or elements within it</li>
+    <li>Get attribute, CSS property, ID, size, tag name, text</li>
+    <li>Get location with or without scrolling into view</li>
+    <li>More complex interactions by creating action chains</li>
+    <li>Send keys</li>
+    <li>Submit</li>
+</ul>
+<p>More complex interaction, such as click and drag, can be performed using action chains.</p>
+</section>
+
+<section class="slide">
+<h2>The maintainability problem</h2>
+<ul>
+    <li>Elements change names, attributes</li>
+    <li>Whole workflows change</li>
+</ul>
+<h2>The maintainabilicy solution</h2>
+<ul>
+    <li>Page maps</li>
+    <li>Page objects</li>
+</ul>
+</section>
+
+<section class="slide">
+<h2>Finding more information</h2>
+<ul>
+    <li>Official site: <a href="http://seleniumhq.org/">http://seleniumhq.org/</a></li>
+    <li>Official documentation: <a href="http://docs.seleniumhq.org/">http://docs.seleniumhq.org/</a></li>
+    <li>Mailing list: <a href="http://groups.google.com/group/selenium-users">http://groups.google.com/group/selenium-users</a></li>
+    <li>IRC channel: #selenium on irc.freenode.org</li>
+    <li>Google Code source: <a href="http://code.google.com/p/selenium/">http://code.google.com/p/selenium/</a></li>
+    <li>Github source: <a href="http://github.com/SeleniumHQ/selenium/">http://github.com/SeleniumHQ/selenium/</a></li>
+</ul>
+</section>
+
+<section class="slide">
+<h2>Getting involved</h2>
+<pre>
+│19:04:30 llaskin1 | "and after you have realized how
+│                  | awesome Selenium is, get yourself
+│                  | involved with the community, hop
+│                  | in the chatroom, submit patches,
+│                  | fix bugs, file bugs, etc."
+</pre>
+<ul>
+    <li>#selenium on irc.freenode.org</li>
+    <li>Submit issues and patches via Google Code or Github</li>
+    <li>Help answer questions on the mailing list and on IRC</li>
+</ul>
+</section>
+
+<section class="slide">
+    <h2>Contact info</h2>
     <ul>
         <li>Daniel Fackrell</li>
-        <li>Started programming in 1985</li>
-        <li>Testing advocate</li>
         <li>Quality Assurance Developer for Bluehost</li>
-        <li></li>
+        <li>unlearned@gmail.com</li>
+        <li>@intchanter on Twitter</li>
+        <li>intchanter on irc.freenode.org</li>
+    </ul>
+    <h2>Meta</h2>
+    <ul>
+        <li>These slides: <a href="http://github.com/intchanter/2013-05-selenium/">http://github.com/intchanter/2013-05-selenium/</a></li>
+        <li>In addition to Selenium, this presentation uses Python and deck.js</li>
     </ul>
 </section>
 
