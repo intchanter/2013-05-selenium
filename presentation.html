@@ -121,6 +121,7 @@ Type "help", "copyright", "credits" or "license" for more information.
     <li>Tag name</li>
     <li>XPath expression</li>
 </ul>
+<h2>How to choose</h2>
 </section>
 
 <section class="slide">
@@ -137,6 +138,13 @@ Type "help", "copyright", "credits" or "license" for more information.
     <li>Submit</li>
 </ul>
 <p>More complex interaction, such as click and drag, can be performed using action chains.</p>
+</section>
+
+<section class="slide">
+<h2>About timing</h2>
+<p>Not all pages take the same amount of time to load, and interactions within a page can also take different amounts of time.</p>
+<p>When finding an element, Selenium honours an implicit wait value that is set globally for the webdriver instance.  By default, it is set to three seconds, and you can set it differently if you expect that most of your element searches will take a different amount of time.</p>
+<p>For finer control, you can use explicit waits, allowing you to specify timing for particular lookups without changing the global implicit wait time.</p>
 </section>
 
 <section class="slide">
